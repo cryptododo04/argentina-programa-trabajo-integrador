@@ -76,7 +76,7 @@
     }
 
     .hero-container{
-      height: 450px;
+      height: 560px;
     }
 
     /*typewritter*/
@@ -139,6 +139,10 @@
     .llamada__titulo {
       font-size: 3.25rem;
       margin-bottom: 2rem;
+    }
+
+    .hero-container{
+      height: 450px;
     }
 
     #container-logo{
