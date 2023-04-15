@@ -1,8 +1,11 @@
 
+
+  
 .logo{
   height: 75px;
   width: 75px;
 }
+
   
   .llamada__titulo {
     font-family: var(--montserrat);
@@ -114,6 +117,34 @@
           50% { opacity: 0; }
           100% { opacity: 0; }
       }
+
+
+      #quienes-somos{
+        background-color: #ebebeb;
+      }
+
+      #quienes-somos h3{
+        font-size: 12px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        color: #0a7ecc;
+    }
+    
+    #quienes-somos h2{
+        font-size: 28px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    
+    #quienes-somos p{
+        
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        max-width: 40em;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
     
 
   @media screen and (max-width: 1042px) {
