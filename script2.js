@@ -60,7 +60,7 @@ $(document).ready(function() {
     const imagenes = {
       "Leanne Graham": "https://scontent.fros9-2.fna.fbcdn.net/v/t1.6435-9/51942445_1669431103202161_142616102755631104_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGLcQNFY8rlkB4-a0WliHuOt2CE5HYPZjm3YITkdg9mOaqJFrMVWkj9657GGcEiOSB_F5vLlMpneIjOh7KgpSwn&_nc_ohc=G7EEG-BHg3IAX_Ejo10&_nc_oc=AQk-EaQxwWdO3Toq-36iqmCMuaqrmyN3qLVrnXRi6nLJzUlJuRlaAKkmsucbtxMpXRM&_nc_ht=scontent.fros9-2.fna&oh=00_AfD9qMA5Ec4pfou85bFoFTtibXGnJ_MfhSFRrwvwSCgFmg&oe=64618FA7",
       "Ervin Howell": "https://firebasestorage.googleapis.com/v0/b/frontend-argentina-programa.appspot.com/o/WhatsApp%20Image%202023-04-15%20at%207.19.55%20PM.jpeg?alt=media&token=1a3393bf-c5a6-4364-b332-3145847556a1",
-      "Clementine Bauch": "https://firebasestorage.googleapis.com/v0/b/frontend-argentina-programa.appspot.com/o/roberta.jpg?alt=media&token=982c9218-96f4-4c0d-8107-1bc3993aacbf"
+      "Clementine Bauch": "https://firebasestorage.googleapis.com/v0/b/frontend-argentina-programa.appspot.com/o/foto_CV.jpg?alt=media&token=aa4cd3da-7647-4a16-bfa3-139175c923ac"
     };
   //declaramos la variable personas y con slice seleccionamos los primero 3 index y con map tomamos los users
     let personas = data.slice(0, 3).map(user => {
