@@ -14,7 +14,6 @@ $(document).ready(function() {
       },
       tiempo: {
         required: true,
-        number: true
       },
       Funcionalidades: {
         required: true
@@ -65,7 +64,7 @@ $(document).ready(function() {
     },
     submitHandler: function(form) {
       // Obtener los valores de los campos del formulario
-var nombre = $('#nombre').val();
+var nombre = $('#nombreContrato').val();
 var tipo = $('#tipo').val();
 var presupuesto = $('#presupuesto').val();
 var tiempo = $('#tiempo').val();
@@ -75,8 +74,56 @@ var diseño = $('#diseño').val();
 var plataforma = $('#plataforma').val();
 var requisitos = $('#requisito').val();
 
+//validaciones de los campos de inputs
+if(nombre.length < 2){
+  alert("ingrese un nombre valido");
+  return false;
+}
+
+if(tipo.length < 2){
+  alert("ingrese un tipo de aplicacion valido");
+  return false;
+}
+
+if(presupuesto.length <= 1){
+  alert("ingrese un presupuesto valido");
+  return false;
+}
+
+if(tiempo.length < 2){
+  alert("ingrese un plazo de tiempo valido");
+  return false;
+}
+
+if(funcionalidades.length < 2){
+  alert("ingrese una funcionalidad valida");
+  return false;
+}
+
+
+if(integracion.length < 2){
+  alert("ingrese una integracion valida");
+  return false;
+}
+
+if(diseño.length < 2){
+  alert("ingrese un diseño valido");
+  return false;
+}
+
+if(plataforma.length < 2){
+  alert("ingrese una plataforma valida para su proyecto");
+  return false;
+}
+
+if(requisitos.length < 2){
+  alert("ingrese un requisito valido");
+  return false;
+}
+
 // Crear el mensaje de resumen
-var resumen = '\nRESUMEN: \nTipo de aplicación que desea encargar: ' + tipo + '\n';
+var resumen = '\nRESUMEN: \nNombre de la empresa: ' + nombre + '\n';
+resumen += 'Tipo de aplicación que desea encargar: ' + tipo + '\n';
 resumen += 'Tiempo disponible para desarrollar la app: ' + tiempo + '\n';
 resumen += 'La integración que necesita es: ' + integracion + '\n';
 resumen += 'Diseño preferido: ' + diseño + '\n';
@@ -109,26 +156,26 @@ $('#generarPDF').click(function() {
 });*/
 function generatePDF() {
 // Obtener valores del formulario
-var nombre = $('#nombre').val();
-var tipo = $('#tipo').val();
-var presupuesto = $('#presupuesto').val();
-var tiempo = $('#tiempo').val();
-var funcionalidades = $('#funcionalidades').val();
-var integracion = $('#Integración').val();
-var diseno = $('#diseño').val();
-var plataforma = $('#plataforma').val();
-var requisitos = $('#requisito').val();
+var nombrePDF = $('#nombreContrato').val();
+var tipoPDF = $('#tipo').val();
+var presupuestoPDF = $('#presupuesto').val();
+var tiempoPDF = $('#tiempo').val();
+var funcionalidadesPDF = $('#funcionalidades').val();
+var integracionPDF = $('#Integración').val();
+var disenoPDF = $('#diseño').val();
+var plataformaPDF = $('#plataforma').val();
+var requisitosPDF = $('#requisito').val();
 
 // Crear contenido para el PDF
-var contenido = 'Nombre de la empresa: ' + nombre + '\n' +
-                'Tipo de aplicación que desea desarrollar: ' + tipo + '\n' +
-                'Presupuesto para el desarrollo de la aplicación: ' + presupuesto + '\n' +
-                'Plazo de tiempo para el desarrollo de la aplicación: ' + tiempo + '\n' +
-                'Funcionalidades: ' + funcionalidades + '\n' +
-                'Integración con otras plataformas o servicios: ' + integracion + '\n' +
-                'Diseño preferido para la aplicación: ' + diseno + '\n' +
-                'Plataforma específica (iOS, Android, etc.): ' + plataforma + '\n' +
-                'Requisitos adicionales para la plataforma de la aplicación: ' + requisitos;
+var contenido = 'Nombre de la empresa: ' + nombrePDF + '\n' +
+                'Tipo de aplicación que desea desarrollar: ' + tipoPDF + '\n' +
+                'Presupuesto para el desarrollo de la aplicación: ' + presupuestoPDF + '\n' +
+                'Plazo de tiempo para el desarrollo de la aplicación: ' + tiempoPDF + '\n' +
+                'Funcionalidades: ' + funcionalidadesPDF + '\n' +
+                'Integración con otras plataformas o servicios: ' + integracionPDF + '\n' +
+                'Diseño preferido para la aplicación: ' + disenoPDF + '\n' +
+                'Plataforma específica (iOS, Android, etc.): ' + plataformaPDF + '\n' +
+                'Requisitos adicionales para la plataforma de la aplicación: ' + requisitosPDF;
 
 // Crear PDF
 var doc = new jsPDF();
