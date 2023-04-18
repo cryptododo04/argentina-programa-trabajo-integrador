@@ -1,4 +1,8 @@
-
+header{
+  position: fixed;
+  width: 100vw;
+  z-index: 4;
+}
 
 /* tamaño logo principal */
 
@@ -276,6 +280,10 @@ margin-bottom: 20px;
 
   @media screen and (max-width: 769px) {
     
+    #text{
+      margin-top: 105px;
+    }
+
     .hero-text{
       max-width: 250px;
     }
@@ -304,6 +312,12 @@ margin-bottom: 20px;
       max-width: 210px;
     }
 
+
+    .llamada__texto{
+      font-size: 19px;
+    }
+
+
   }
 
   /* card carrousel */
@@ -312,6 +326,7 @@ margin-bottom: 20px;
   @media screen and (min-width: 765px) {
     .carousel-inner {
       display: flex;
+      z-index: 2;
     }
 
     .carousel-item{
@@ -346,4 +361,6 @@ margin-bottom: 20px;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
+    
     }
