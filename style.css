@@ -88,7 +88,7 @@
 
 #section-staff h2{
   font-size: 28px;
-  font-family: 'Nunito', sans-serif;
+  font-family: sans-serif;
   font-weight: 900;
 }
 
@@ -127,7 +127,7 @@ margin-bottom: 20px;
 
 #formulario-contrato{
   padding-top: 20px;
-  background-color: #dfdede;;
+  background-color: #ebe6e6;;
 }
 
 #form-contrato-container{
@@ -252,8 +252,9 @@ margin-bottom: 20px;
       }
 
       #footer-container-all{
-        background-color: #d8d8d8;
+        background-color: #555555;
         margin-bottom: 0px;
+        color: rgb(233, 232, 232);
       }
     
       /* The typewriter cursor effect */
