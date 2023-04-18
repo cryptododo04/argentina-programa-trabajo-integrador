@@ -2,7 +2,7 @@
 $(document).ready(function() {
   $('#formulario-contrato').validate({
     rules: {
-      nombre: {
+      nombreContrato: {
         required: true
       },
       tipo: {
@@ -15,7 +15,7 @@ $(document).ready(function() {
       tiempo: {
         required: true,
       },
-      Funcionalidades: {
+      funcionalidades: {
         required: true
       },
       Integración: {
@@ -32,7 +32,7 @@ $(document).ready(function() {
       }
     },
     messages: {
-      nombre: {
+      nombreContrato: {
         required: 'Por favor, ingrese el nombre de su empresa'
       },
       tipo: {
@@ -46,7 +46,7 @@ $(document).ready(function() {
         required: 'Por favor, ingrese el plazo de tiempo que tiene para el desarrollo de la aplicación',
         number: 'Por favor, ingrese un número válido'
       },
-      Funcionalidades: {
+      funcionalidades: {
         required: 'Por favor, ingrese las funcionalidades que desea incluir en la aplicación'
       },
       Integración: {

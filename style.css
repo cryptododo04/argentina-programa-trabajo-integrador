@@ -251,6 +251,14 @@ margin-bottom: 20px;
         margin-bottom: 0px;
         color: rgb(233, 232, 232);
       }
+
+      .error{
+        color: red;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        font-size: 13px;
+      }
     
       /* The typewriter cursor effect */
       @keyframes cursor {
