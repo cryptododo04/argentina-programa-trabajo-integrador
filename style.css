@@ -101,6 +101,52 @@
   
 }
 
+
+/*Seccion contacto*/
+
+#formulario-contacto{
+  padding-top: 20px;
+  background-color: #d8d8d8;;
+}
+
+#contacto-container h3{
+  font-size: 12px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  color: #0a7ecc;
+}
+
+#contacto-container h2{
+font-size: 28px;
+font-family: sans-serif;
+font-weight: 900;
+margin-bottom: 20px;
+}
+
+/*Seccion contrato*/
+
+#formulario-contrato{
+  padding-top: 20px;
+  background-color: #dfdede;;
+}
+
+#form-contrato-container{
+  border: 2px gray solid;
+}
+
+#contrato-container h3{
+  font-size: 12px;
+  padding-top: 30px;
+  margin-bottom: 5px;
+  color: #0a7ecc;
+}
+
+#contrato-container h2{
+font-size: 28px;
+font-family: sans-serif;
+font-weight: 900;
+margin-bottom: 20px;
+}
   
   .llamada__titulo {
     font-family: var(--montserrat);
@@ -203,6 +249,11 @@
         height: 25px;
         width: 4px;
         animation: cursor 0.4s infinite;
+      }
+
+      #footer-container-all{
+        background-color: #d8d8d8;
+        margin-bottom: 0px;
       }
     
       /* The typewriter cursor effect */
