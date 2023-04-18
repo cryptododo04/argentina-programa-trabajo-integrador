@@ -125,15 +125,6 @@ margin-bottom: 20px;
 
 /*Seccion contrato*/
 
-#formulario-contrato{
-  padding-top: 20px;
-  background-color: #ebe6e6;;
-}
-
-#form-contrato-container{
-  border: 2px gray solid;
-}
-
 #contrato-container h3{
   font-size: 12px;
   padding-top: 30px;
